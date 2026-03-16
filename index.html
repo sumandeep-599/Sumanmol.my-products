@@ -3,6 +3,173 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jewelry Categories</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdfaf7;
+      color: #333;
+      margin: 0;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      text-align: center;
+      color: #b8860b;          /* golden color */
+      font-size: 2.4rem;
+      margin-bottom: 1.5rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .category-list {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+      padding: 2.5rem;
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+
+    .category-list h2 {
+      margin: 0 0 1.2rem 0;
+      color: #8b4513;           /* rich brown */
+      font-size: 1.5rem;
+      border-bottom: 2px solid #f4e8d9;
+      padding-bottom: 0.6rem;
+    }
+
+    .category-item {
+      display: flex;
+      align-items: center;
+      padding: 0.9rem 0;
+      border-bottom: 1px solid #f0e6d9;
+      transition: all 0.2s ease;
+    }
+
+    .category-item:last-child {
+      border-bottom: none;
+    }
+
+    .category-item:hover {
+      background-color: #fffaf0;
+      padding-left: 1.2rem;
+    }
+
+    .category-item img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-right: 1rem;
+      border: 1px solid #f4e8d9;
+      flex-shrink: 0;
+    }
+
+    .category-text {
+      flex: 1;
+    }
+
+    /* Optional: make important categories stand out */
+    .highlight {
+      font-weight: 600;
+      color: #c71585;           /* deep pink for mangalsutra etc. */
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+      .category-list {
+        padding: 1.5rem;
+      }
+      .category-item img {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>CATEGORIES</h1>
+
+  <div class="category-list">
+
+    <div class="category-item highlight">
+      <img src="https://www.bhindi.com/cdn/shop/files/ms638_1.jpg?v=1734567890" alt="Mangalsutra">
+      <span class="category-text">Mangalsutra</span>
+    </div>
+
+    <div class="category-item">
+      <img src="https://www.bhindi.com/cdn/shop/files/ns1637_1.jpg?v=1734567890" alt="Mangalsutra Necklace Set">
+      <span class="category-text">Mangalsutra Necklace Set & Long Set</span>
+    </div>
+
+    <div class="category-item">
+      <img src="https://www.tarinika.com/cdn/shop/products/antique-pendant-1.jpg?v=1734567890" alt="Antique Pendant Set">
+      <span class="category-text">Antique Pendant Set</span>
+    </div>
+
+    <div class="category-item">
+      <img src="https://dulhanjewels.com/cdn/shop/products/jadau-kundan-necklace.jpg?v=1734567890" alt="Jadau Necklace Set">
+      <span class="category-text">Jadau Necklace Set</span>
+    </div>
+
+    <div class="category-item">
+      <img src="https://www.bhindi.com/cdn/shop/files/d23b30_1.jpg?v=1734567890" alt="Long Necklace Set">
+      <span class="category-text">Long Necklace Set</span>
+    </div>
+
+    <div class="category-item">
+      <img src="https://www.bhindi.com/cdn/shop/files/necklace-set-example.jpg?v=1734567890" alt="Necklace Set">
+      <span class="category-text">Necklace Set</span>
+    </div>
+
+    <div class="category-item">
+      <img src="https://www.viranijewelers.com/cdn/shop/products/mala-set.jpg?v=1734567890" alt="Mala Set">
+      <span class="category-text">Mala Set</span>
+    </div> <div class="category-item">
+      <img src="https://www.amazeldesigns.com/cdn/shop/products/pipal-patti-necklace.jpg?v=1734567890" alt="Pipal Patti Necklace Set">
+      <span class="category-text">Pipal Patti Necklace Set & Long Set</span>
+    </div>
+
+    <div class="category-item">
+      <img src="https://www.tanishq.co.in/dw/image/v2/BFKS_PRD/on/demandware.static/-/Sites-Tanishq-master/default/dwexample/gents-kada.jpg" alt="Gents Kada">
+      <span class="category-text">Gents Kada</span>
+    </div>
+
+    <div class="category-item highlight">
+      <img src="https://zerakijewels.com/cdn/shop/products/short-mangalsutra.jpg?v=1734567890" alt="Short Mangalsutra">
+      <span class="category-text">Short Mangalsutra & Chain</span>
+    </div>
+
+    <div class="category-item">
+      <img src="https://www.tanishq.co.in/dw/image/v2/BFKS_PRD/on/demandware.static/-/Sites-Tanishq-master/default/dwexample/gents-chain.jpg" alt="Gents Chain">
+      <span class="category-text">Gents Chain</span>
+    </div>
+
+    <div class="category-item">
+      <img src="https://www.bhindi.com/cdn/shop/files/ban8633_1.jpg?v=1734567890" alt="Bangles">
+      <span class="category-text">Bangles</span>
+    </div>
+
+  </div>
+</div>
+
+</body>
+  </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact Us - Sumanmol Jewellers</title>
   <style>
     * {
@@ -245,7 +412,7 @@
 
   <footer>
     Copyright © 2026, Sumanmol Jewellers, All Right Reserved.<br>
-    Designed by Parm Projects.
+    Designed by suman Projects.
   </footer>
 
 </body>
